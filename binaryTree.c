@@ -4,7 +4,7 @@
 //#include <string.h>
 //#include <math.h>
 
-enum Level { LOW = 1, MEDIUM = 2, HIGH = 3 };
+//enum Level { LOW = 1, MEDIUM = 2, HIGH = 3 };
 
 struct NodeData {
     int number;
