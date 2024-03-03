@@ -3,7 +3,6 @@
 //#include <stdbool.h>
 //#include <string.h>
 //#include <math.h>
-
 //enum Level { LOW = 1, MEDIUM = 2, HIGH = 3 };
 
 struct NodeData {
@@ -25,7 +24,7 @@ struct Node * createNode(int number) {
     struct Node *node = (struct Node *) calloc(1, sizeof(struct Node));
 
     // Assegnazione dei dati del nodo e inizializzazione dei sui figli
-    // Dato che è un puntatore si usa '->' per acceder alle proprietà della struttura
+    // Dato che è un puntatore si usa '->' per accedere alle proprietà della struttura
     node->data = data;
     node->left = NULL;
     node->right = NULL;
@@ -70,6 +69,15 @@ int main() {
     // Creazione dei figli del nodo 3
     root->right->left = createNode(6);
     root->right->right = createNode(7);
+
+    /*
+    Rappresentazione grafica dell'albero creato:
+             1
+           /  \
+          2    3
+         / \  / \
+        4  5 6  7
+    */
 
     visitTree(root);
 
